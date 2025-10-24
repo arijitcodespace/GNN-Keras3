@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gnn-keras3"
+version = "0.1.0"
+description = "TF/Keras 3 Graph Neural Networks Library"
+readme = "README.md"
+authors = [{ name = "Arijit Dey" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+  "tensorflow>=2.16.0",
+  "keras>=3.0.0",
+  "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "ruff", "mypy", "types-tensorflow"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
