@@ -1,4 +1,37 @@
+# bytecode / cache
 __pycache__/
-*.vscode
-*.txt
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# envs & tooling
+.venv/
+venv/
+env/
+.python-version
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+
+# editors/OS
+.vscode/
+.idea/
+.DS_Store
+
+# builds / packages
+build/
+dist/
+*.egg-info/
+
+# ML artifacts
+models/
+checkpoints/
 logs/
+*.h5
+*.keras
+*.ckpt*
+*.pth
+
+# data
+data/
